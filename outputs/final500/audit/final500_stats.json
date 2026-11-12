@@ -1,0 +1,382 @@
+{
+  "generated_at": "2026-11-12 21:15:30",
+  "note": "全部数字由真实结果文件离线计算；QA 使用 gold evidence_pages（oracle 证据上界），不代表端到端检索系统。",
+  "dataset": {
+    "n": 500,
+    "n_unique_qid": 500,
+    "n_unique_docs": 134,
+    "n_answerable": 381,
+    "n_unanswerable": 119,
+    "n_answerable_without_gold_pages": 2
+  },
+  "files": {
+    "qa": "outputs\\final500\\run500\\qa\\ds_results.jsonl",
+    "route": "outputs\\final500\\run500\\toc\\routes.jsonl",
+    "toc_metrics": "outputs\\final500\\run500\\toc\\metrics.json",
+    "jev_dir": "outputs\\final500\\run500\\jev"
+  },
+  "qa_raw_records": 505,
+  "route_raw_records": 500,
+  "jev_unique_snippets": 500,
+  "jev_sources": {
+    "title": {
+      "records": 263,
+      "success": 263
+    },
+    "route": {
+      "records": 88,
+      "success": 88
+    },
+    "ocr": {
+      "records": 11,
+      "success": 11
+    },
+    "recover": {
+      "records": 2,
+      "success": 2
+    },
+    "pilot1": {
+      "records": 2,
+      "success": 2
+    },
+    "pilot2": {
+      "records": 8,
+      "success": 8
+    },
+    "gapfill": {
+      "records": 61,
+      "success": 61
+    },
+    "round3": {
+      "records": 65,
+      "success": 65
+    }
+  },
+  "jev_multi_source_qids": 0,
+  "sets": {
+    "all_500": {
+      "n": 500,
+      "qa": {
+        "attempted": 500,
+        "api_success": 495,
+        "valid_input": 495,
+        "evaluable": 495,
+        "strict_correct": 309,
+        "strict_rate": 0.6242,
+        "lenient_correct": 367,
+        "lenient_rate": 0.7414,
+        "unanswerable_in_set": 119,
+        "refusal_correct_lenient": 113,
+        "refusal_rate": 0.9496
+      },
+      "route": {
+        "applicable": 374,
+        "attempted": 374,
+        "api_success": 374,
+        "valid_input": 374,
+        "evaluable": 374,
+        "not_applicable": 126,
+        "hit1": 184,
+        "hit1_rate": 0.492,
+        "hit3": 219,
+        "hit3_rate": 0.5856,
+        "page_recall1_macro": 0.4176,
+        "page_recall3_macro": 0.5326,
+        "full_recall1": 132,
+        "full_recall1_rate": 0.3529,
+        "full_recall3": 180,
+        "full_recall3_rate": 0.4813
+      },
+      "jev": {
+        "attempted": 500,
+        "api_success": 500,
+        "valid_input": 500,
+        "evaluable": 500,
+        "not_applicable": 0,
+        "failed": 0,
+        "relevant_true": 193,
+        "self_contained_true": 283,
+        "sufficient_true": 37,
+        "action_raw": {
+          "expand": 169,
+          "search": 296,
+          "answer": 35
+        },
+        "action_norm": {
+          "expand": 156,
+          "search": 307,
+          "answer": 37
+        },
+        "sources": {
+          "title": 263,
+          "route": 88,
+          "round3": 65,
+          "gapfill": 61,
+          "ocr": 11,
+          "recover": 2,
+          "pilot1": 2,
+          "pilot2": 8
+        },
+        "accuracy": null,
+        "accuracy_note": "无人工 confirmed 标注，不计算判断准确率"
+      }
+    },
+    "common_all_three": {
+      "n": 373,
+      "qa": {
+        "attempted": 373,
+        "api_success": 373,
+        "valid_input": 373,
+        "evaluable": 373,
+        "strict_correct": 195,
+        "strict_rate": 0.5228,
+        "lenient_correct": 253,
+        "lenient_rate": 0.6783,
+        "unanswerable_in_set": 0,
+        "refusal_correct_lenient": 0,
+        "refusal_rate": null
+      },
+      "route": {
+        "applicable": 373,
+        "attempted": 373,
+        "api_success": 373,
+        "valid_input": 373,
+        "evaluable": 373,
+        "not_applicable": 0,
+        "hit1": 184,
+        "hit1_rate": 0.4933,
+        "hit3": 219,
+        "hit3_rate": 0.5871,
+        "page_recall1_macro": 0.4187,
+        "page_recall3_macro": 0.534,
+        "full_recall1": 132,
+        "full_recall1_rate": 0.3539,
+        "full_recall3": 180,
+        "full_recall3_rate": 0.4826
+      },
+      "jev": {
+        "attempted": 373,
+        "api_success": 373,
+        "valid_input": 373,
+        "evaluable": 373,
+        "not_applicable": 0,
+        "failed": 0,
+        "relevant_true": 154,
+        "self_contained_true": 218,
+        "sufficient_true": 34,
+        "action_raw": {
+          "expand": 134,
+          "search": 208,
+          "answer": 31
+        },
+        "action_norm": {
+          "expand": 120,
+          "search": 219,
+          "answer": 34
+        },
+        "sources": {
+          "title": 205,
+          "route": 88,
+          "gapfill": 49,
+          "round3": 9,
+          "ocr": 11,
+          "recover": 2,
+          "pilot1": 1,
+          "pilot2": 8
+        },
+        "accuracy": null,
+        "accuracy_note": "无人工 confirmed 标注，不计算判断准确率"
+      }
+    },
+    "answerable_381": {
+      "n": 381,
+      "qa": {
+        "attempted": 381,
+        "api_success": 376,
+        "valid_input": 376,
+        "evaluable": 376,
+        "strict_correct": 196,
+        "strict_rate": 0.5213,
+        "lenient_correct": 254,
+        "lenient_rate": 0.6755,
+        "unanswerable_in_set": 0,
+        "refusal_correct_lenient": 0,
+        "refusal_rate": null
+      },
+      "route": {
+        "applicable": 374,
+        "attempted": 374,
+        "api_success": 374,
+        "valid_input": 374,
+        "evaluable": 374,
+        "not_applicable": 7,
+        "hit1": 184,
+        "hit1_rate": 0.492,
+        "hit3": 219,
+        "hit3_rate": 0.5856,
+        "page_recall1_macro": 0.4176,
+        "page_recall3_macro": 0.5326,
+        "full_recall1": 132,
+        "full_recall1_rate": 0.3529,
+        "full_recall3": 180,
+        "full_recall3_rate": 0.4813
+      },
+      "jev": {
+        "attempted": 381,
+        "api_success": 381,
+        "valid_input": 381,
+        "evaluable": 381,
+        "not_applicable": 0,
+        "failed": 0,
+        "relevant_true": 156,
+        "self_contained_true": 223,
+        "sufficient_true": 34,
+        "action_raw": {
+          "expand": 135,
+          "search": 215,
+          "answer": 31
+        },
+        "action_norm": {
+          "expand": 122,
+          "search": 225,
+          "answer": 34
+        },
+        "sources": {
+          "title": 207,
+          "route": 88,
+          "gapfill": 51,
+          "round3": 12,
+          "ocr": 11,
+          "recover": 2,
+          "pilot1": 2,
+          "pilot2": 8
+        },
+        "accuracy": null,
+        "accuracy_note": "无人工 confirmed 标注，不计算判断准确率"
+      }
+    },
+    "unanswerable_119": {
+      "n": 119,
+      "qa": {
+        "attempted": 119,
+        "api_success": 119,
+        "valid_input": 119,
+        "evaluable": 119,
+        "strict_correct": 113,
+        "strict_rate": 0.9496,
+        "lenient_correct": 113,
+        "lenient_rate": 0.9496,
+        "unanswerable_in_set": 119,
+        "refusal_correct_lenient": 113,
+        "refusal_rate": 0.9496
+      },
+      "route": {
+        "applicable": 0,
+        "attempted": 0,
+        "api_success": 0,
+        "valid_input": 0,
+        "evaluable": 0,
+        "not_applicable": 119,
+        "hit1": 0,
+        "hit1_rate": null,
+        "hit3": 0,
+        "hit3_rate": null,
+        "page_recall1_macro": null,
+        "page_recall3_macro": null,
+        "full_recall1": 0,
+        "full_recall1_rate": null,
+        "full_recall3": 0,
+        "full_recall3_rate": null
+      },
+      "jev": {
+        "attempted": 119,
+        "api_success": 119,
+        "valid_input": 119,
+        "evaluable": 119,
+        "not_applicable": 0,
+        "failed": 0,
+        "relevant_true": 37,
+        "self_contained_true": 60,
+        "sufficient_true": 3,
+        "action_raw": {
+          "search": 81,
+          "expand": 34,
+          "answer": 4
+        },
+        "action_norm": {
+          "search": 82,
+          "expand": 34,
+          "answer": 3
+        },
+        "sources": {
+          "round3": 53,
+          "title": 56,
+          "gapfill": 10
+        },
+        "accuracy": null,
+        "accuracy_note": "无人工 confirmed 标注，不计算判断准确率"
+      }
+    }
+  },
+  "qa_failed": [
+    {
+      "qid": "Q0134",
+      "status": "no_images",
+      "error": "所有请求页都无法渲染",
+      "image_count": 0,
+      "missing_pages": [
+        0
+      ]
+    },
+    {
+      "qid": "Q0272",
+      "status": "api_error",
+      "error": "BadRequestError: Error code: 400 - {'error': {'message': 'An error occurred in model serving, error message is: [Input data may contain inappropriate content.]', 'type': 'data_inspection_failed', 'param': None, 'code': 'data_inspection_failed'}, 'id': 'chatcmpl-96807f5d-e1e3-96d8-af5b-1dd0fb9dad74', 'request_id': '96807f5d-e1e3-96d8-af5b-1dd0fb9dad74'}",
+      "image_count": 6,
+      "missing_pages": []
+    },
+    {
+      "qid": "Q0290",
+      "status": "no_images",
+      "error": "所有请求页都无法渲染",
+      "image_count": 0,
+      "missing_pages": [
+        115,
+        116
+      ]
+    },
+    {
+      "qid": "Q0373",
+      "status": "no_images",
+      "error": "所有请求页都无法渲染",
+      "image_count": 0,
+      "missing_pages": [
+        317,
+        318
+      ]
+    },
+    {
+      "qid": "Q0383",
+      "status": "no_images",
+      "error": "所有请求页都无法渲染",
+      "image_count": 0,
+      "missing_pages": [
+        310
+      ]
+    }
+  ],
+  "route_not_applicable_reasons": {
+    "答案为 Not answerable（不计检索失败）": 119,
+    "gold 证据页超出 PDF 实际页数": 5,
+    "无 gold 证据页，无法计算 Page Recall": 2
+  },
+  "route45_primary_causes": {
+    "toc_degenerate_and_zero_text": 45
+  },
+  "gold_page_fixes": {
+    "n": 7,
+    "note": "修正页码属于 gold 标注，未随公开副本发布"
+  },
+  "jev_missing_n": 0,
+  "jev_missing_by_answerable": {}
+}

@@ -1,0 +1,27 @@
+{
+  "records_total": 505,
+  "unique_qids": 500,
+  "success": 495,
+  "partial_evidence_success": 1,
+  "status_counts": {
+    "ok": 495,
+    "no_images": 4,
+    "api_error": 1
+  },
+  "total_tokens": 891613,
+  "prompt_tokens": 863966,
+  "completion_tokens": 27647,
+  "latency_total_sec": 1994.62,
+  "latency_avg_sec": 4.03,
+  "generated_at": "2026-11-08 17:28:31",
+  "run_config": {
+    "model": "deepseek-v4.1-flash-1017",
+    "max_pages": 10,
+    "render_dpi": 300,
+    "max_render_dim": 2000,
+    "input_policy": "使用 gold evidence_pages；空证据页回退第 1 页（与 Qwen 版一致）；不是完整检索系统的端到端结果。",
+    "qid_scheme": "sample_index 1-based -> Q0001..Q0500",
+    "input_file": "<PROJECT_ROOT>\\outputs\\final500\\run500\\qa_input_500.jsonl",
+    "output_file": "<PROJECT_ROOT>\\outputs\\final500\\run500\\qa\\ds_results.jsonl"
+  }
+}

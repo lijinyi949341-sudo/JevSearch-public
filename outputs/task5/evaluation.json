@@ -1,0 +1,110 @@
+{
+  "meta": {
+    "n_samples_total": 12,
+    "n_evaluated": 7,
+    "n_excluded": 5,
+    "excluded_samples": [
+      {
+        "sample_id": "S04",
+        "review_status": "pending"
+      },
+      {
+        "sample_id": "S05",
+        "review_status": "pending"
+      },
+      {
+        "sample_id": "S08",
+        "review_status": "pending"
+      },
+      {
+        "sample_id": "S09",
+        "review_status": "pending"
+      },
+      {
+        "sample_id": "S12",
+        "review_status": "pending"
+      }
+    ],
+    "models": [
+      "jev-1.14.0"
+    ],
+    "prompt_versions": [
+      "task5_v1"
+    ],
+    "note": "指标仅使用已确认样本的 human_* 人工标签；未确认/uncertain 样本被排除；suggestion_unverified 未参与计算。"
+  },
+  "action_accuracy": 1.0,
+  "confusion_matrix": {
+    "answer": {
+      "answer": 3,
+      "expand": 0,
+      "search": 0
+    },
+    "expand": {
+      "answer": 0,
+      "expand": 2,
+      "search": 0
+    },
+    "search": {
+      "answer": 0,
+      "expand": 0,
+      "search": 2
+    }
+  },
+  "per_class": {
+    "answer": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support_human": 3,
+      "predicted_n": 3
+    },
+    "expand": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support_human": 2,
+      "predicted_n": 2
+    },
+    "search": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "support_human": 2,
+      "predicted_n": 2
+    }
+  },
+  "expand": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support_human": 2,
+    "predicted_n": 2
+  },
+  "under_expansion": {
+    "definition": "human=expand 且 pred=answer 的比例（需要扩展却被判可直接回答）",
+    "count": 0,
+    "support": 2,
+    "rate": 0.0,
+    "samples": []
+  },
+  "over_expansion": {
+    "definition": "human=answer 且 pred=expand 的比例（已足够回答却被判需扩展）",
+    "count": 0,
+    "support": 3,
+    "rate": 0.0,
+    "samples": []
+  },
+  "missed_search": {
+    "definition": "human=search 且 pred=answer 的比例",
+    "count": 0,
+    "support": 2,
+    "samples": []
+  },
+  "errors": [],
+  "calls": {
+    "total_input_tokens": 8401,
+    "total_output_tokens": 658,
+    "avg_latency_sec": 0.5549999999999999
+  }
+}

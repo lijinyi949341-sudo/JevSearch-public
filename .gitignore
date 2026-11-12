@@ -1,0 +1,32 @@
+# 虚拟环境与缓存
+.venv_paddleocr/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 密钥与本地配置
+.env
+*.log
+*.tmp
+*.bak
+
+# 数据集原件与本地派生文本（不随仓库发布）
+pdfs/
+*.pdf
+document_texts.json
+sampled_500_for_baseline.jsonl
+outputs/final500/ocr/
+outputs/final500/run500/qa_input_500.jsonl
+outputs/final500/toc/toc.json
+outputs/final500/toc/toc_preview.md
+
+# 逐题原始预测与证据片段（含数据集文本，不随公开版发布）
+outputs/final500/run500/qa/*.jsonl
+outputs/final500/run500/toc/*.jsonl
+outputs/final500/run500/jev/
+outputs/task5/*.jsonl
+outputs/task6/*.jsonl
+outputs/task6/toc.json
+baseline_results.jsonl
+advanced_rag_results.jsonl

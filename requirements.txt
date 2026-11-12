@@ -1,0 +1,16 @@
+# JevSearch 运行依赖（Python 3.12）
+#
+# 必需依赖：文本层解析、PDF 渲染、模型 API 调用、离线评估
+pymupdf>=2.0
+openai>=3.36
+typesafe-sdk>=0.7.5
+#
+# 可选依赖：从 Hugging Face 重建固定 500 题清单（prepare_data.py）
+# pip install datasets>=5.0
+#
+# 可选依赖：本地 OCR（仅缺失文本层页面需要）
+# 建议单独建虚拟环境（如 .venv_paddleocr），避免与主环境依赖冲突
+# pip install paddlepaddle==3.3.1 paddleocr==3.7.0 Pillow>=13.0
+#
+# 可选依赖：compare_results.py 中的卡方显著性检验
+# pip install scipy>=1.11

@@ -1,0 +1,259 @@
+{
+  "generated_at": "2026-11-13 02:00:34",
+  "dataset_available": true,
+  "samples": 500,
+  "jev": {
+    "dataset_available": true,
+    "per_file": {
+      "jev_predictions_gapfill_500.jsonl": {
+        "records": 61,
+        "success": 61
+      },
+      "jev_predictions_ocr_500.jsonl": {
+        "records": 11,
+        "success": 11
+      },
+      "jev_predictions_ocr_pilot2_500.jsonl": {
+        "records": 8,
+        "success": 8
+      },
+      "jev_predictions_ocr_pilot_500.jsonl": {
+        "records": 2,
+        "success": 2
+      },
+      "jev_predictions_recover_500.jsonl": {
+        "records": 2,
+        "success": 2
+      },
+      "jev_predictions_round3_500.jsonl": {
+        "records": 65,
+        "success": 65
+      },
+      "jev_predictions_route_500.jsonl": {
+        "records": 88,
+        "success": 88
+      },
+      "jev_predictions_title_500.jsonl": {
+        "records": 263,
+        "success": 263
+      }
+    },
+    "success_records": 500,
+    "unique_qid": 500,
+    "duplicate_qid": {},
+    "failed_records": 0,
+    "missing_qid": [],
+    "integrity": {
+      "missing_model": 0,
+      "missing_tokens": 0,
+      "missing_run_at": 0,
+      "empty_state": 0,
+      "invalid_action": 0
+    },
+    "untraceable_snippet": [],
+    "page_mismatch_snippet": [],
+    "selection_uses_gold": 0,
+    "gold_answer_in_evidence": 61,
+    "gold_answer_in_evidence_len_le_2": 45,
+    "input_tokens": 660142,
+    "output_tokens": 47000,
+    "models": {
+      "jev-1.14.0": 500
+    },
+    "action_all": {
+      "search": 296,
+      "expand": 169,
+      "answer": 35
+    },
+    "relevant_true": 193,
+    "self_contained_true": 283,
+    "sufficient_true": 37,
+    "unanswerable": {
+      "n": 119,
+      "action": {
+        "search": 81,
+        "expand": 34,
+        "answer": 4
+      },
+      "sufficient_true_qids": [
+        "Q0114",
+        "Q0363",
+        "Q0385"
+      ]
+    },
+    "answerable": {
+      "n": 381,
+      "action": {
+        "search": 215,
+        "expand": 135,
+        "answer": 31
+      },
+      "sufficient_true": 34
+    }
+  },
+  "original_files_hash": {
+    "outputs\\final500\\run500\\toc\\routes.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\qa\\ds_results.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\jev_predictions_title_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\jev_predictions_route_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\jev_predictions_ocr_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\jev_predictions_recover_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\jev_predictions_ocr_pilot_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\jev_predictions_ocr_pilot2_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_gapfill_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_ocr_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_ocr_pilot2_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_ocr_pilot_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_recover_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_round2_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_round3_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_route_500.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_route_500_v3.jsonl": "UNCHANGED",
+    "outputs\\final500\\run500\\jev\\snippets_title_500.jsonl": "UNCHANGED"
+  },
+  "qa": {
+    "records": 505,
+    "unique_qid": 500,
+    "success": 495,
+    "failed_qids": [
+      "Q0134",
+      "Q0272",
+      "Q0290",
+      "Q0373",
+      "Q0383"
+    ],
+    "status_counts": {
+      "ok": 495,
+      "no_images": 4,
+      "api_error": 1
+    },
+    "all_500_failure_as_wrong": {
+      "n": 500,
+      "strict": 309,
+      "strict_rate": 0.618,
+      "lenient": 367,
+      "lenient_rate": 0.734
+    },
+    "all_500_success_only": {
+      "n": 495,
+      "strict": 309,
+      "strict_rate": 0.6242,
+      "lenient": 367,
+      "lenient_rate": 0.7414
+    },
+    "answerable_success_only": {
+      "n": 376,
+      "strict": 196,
+      "strict_rate": 0.5213,
+      "lenient": 254,
+      "lenient_rate": 0.6755
+    },
+    "unanswerable_refusal_correctness": {
+      "n": 119,
+      "strict": 113,
+      "strict_rate": 0.9496,
+      "lenient": 113,
+      "lenient_rate": 0.9496
+    },
+    "tokens": {
+      "prompt": 863966,
+      "completion": 27647
+    },
+    "note": "输入使用 gold evidence_pages（oracle），空证据页回退第 1 页；gold answer 不发送。"
+  },
+  "route": {
+    "exec_records": 500,
+    "exec_ok": 374,
+    "fill_records": 126,
+    "fill_ok": 56,
+    "fill_abstain": 70,
+    "executed_unique_qid": 500,
+    "eval_summary": {
+      "expected_eligible": 374,
+      "records_present": 500,
+      "eligible_in_records": 374,
+      "evaluated_ok": 374,
+      "status_counts_records": {
+        "ok": 374,
+        "unanswerable_skipped": 119,
+        "invalid_gold_pages_skipped": 5,
+        "missing_gold_pages_skipped": 2
+      },
+      "unanswerable_excluded_from_recall": 119,
+      "missing_gold_pages_excluded": 2,
+      "invalid_gold_excluded_from_recall": 5,
+      "no_toc_excluded": 0,
+      "api_error_counted_as_miss": 0,
+      "invalid_json_counted_as_miss": 0,
+      "no_valid_section_counted_as_miss": 0,
+      "invalid_section_id_total": 0,
+      "token_usage_total": 617856,
+      "latency_total_sec": 337.57,
+      "latency_avg_sec": 0.903,
+      "llm_all_eligible": {
+        "n": 374,
+        "section_hit@1": 184,
+        "section_hit@3": 219,
+        "page_recall@1_macro": 0.4176,
+        "page_recall@3_macro": 0.5326,
+        "page_recall@1_micro": 0.3315,
+        "page_recall@3_micro": 0.4657,
+        "full_evidence_recall@1": 132,
+        "full_evidence_recall@3": 180,
+        "avg_candidate_pages@1": 3.8316,
+        "avg_candidate_pages@3": 5.9118
+      },
+      "llm_ok_only_reference": {
+        "n": 374,
+        "section_hit@1": 184,
+        "section_hit@3": 219,
+        "page_recall@1_macro": 0.4176,
+        "page_recall@3_macro": 0.5326,
+        "page_recall@1_micro": 0.3315,
+        "page_recall@3_micro": 0.4657,
+        "full_evidence_recall@1": 132,
+        "full_evidence_recall@3": 180,
+        "avg_candidate_pages@1": 3.8316,
+        "avg_candidate_pages@3": 5.9118
+      },
+      "baseline_title_match_all_eligible": {
+        "n": 374,
+        "section_hit@3": 107,
+        "page_recall@3_macro": 0.2329,
+        "avg_candidate_pages@3": 3.2139
+      },
+      "baseline_budget_matched_all_eligible": {
+        "n": 374,
+        "section_hit": 160,
+        "page_recall_macro": 0.3637,
+        "full_evidence_recall": 114,
+        "avg_candidate_pages": 8.2299
+      },
+      "note": "Page Recall 只在“不可答=否 + 目录可用 + gold 页码在 PDF 范围内”的题上计算；API 报错/非法 JSON/无有效章节在该口径下记 0，不静默剔除。"
+    },
+    "recomputed_base_374": {
+      "n": 374,
+      "hit@1": 184,
+      "hit@3": 219,
+      "pr@1": 0.4176,
+      "pr@3": 0.5326,
+      "full@3": 181
+    },
+    "recomputed_376_non_abstain": {
+      "n": 376,
+      "hit@3": 221,
+      "pr@3": 0.535
+    },
+    "recomputed_379_strict": {
+      "n": 379,
+      "hit@3": 221,
+      "pr@3": 0.5308
+    }
+  },
+  "shared_evaluable_qids": {
+    "jev_and_qa": 495,
+    "jev_and_route_eval": 379,
+    "all_three": 375,
+    "note": "route_eval 采用 379 严格口径（原生 374 + 5 道页码修正题）。"
+  }
+}

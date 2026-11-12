@@ -1,0 +1,117 @@
+{
+  "generated_at": "2026-11-11 13:42:45",
+  "dataset": "MMLongBench-Doc 500 题（同一采样文件）",
+  "qid_scheme": "Q0001..Q0500，按采样文件物理行号 1-based",
+  "n_questions": 500,
+  "n_unique_docs": 134,
+  "n_answerable": 381,
+  "n_unanswerable": 119,
+  "n_answerable_but_no_gold_pages": 2,
+  "comparison_policy": {
+    "same_qids": true,
+    "primary_accuracy": "DeepSeek 失败/缺失样本记为错（denominator=Qwen 有回答的同一 qid 集）",
+    "reference_accuracy": "双方都成功的 qid 子集",
+    "retrieval_denominator": "不可答题与 gold 页码越界题不计入 Page Recall",
+    "qa_note": "多模态问答使用 gold evidence_pages，属于已知证据页问答，不是端到端检索系统的结果",
+    "jev_policy": "只有 review_status=confirmed 且字段完整的人工标注才可计算准确率"
+  },
+  "models": {
+    "qwen3-vl-plus": {
+      "role": "第一轮多模态问答/基线（已完成，不重复付费）"
+    },
+    "deepseek-v4.1-flash-1017": {
+      "role": "500 题多模态问答 + 目录路由 + Jev 调用",
+      "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    },
+    "jev-latest": {
+      "role": "上下文必要性判断",
+      "api": "https://api.typesafe.ai"
+    }
+  },
+  "artifacts": [
+    {
+      "purpose": "500 题采样（只读）",
+      "path": "sampled_500_for_baseline.jsonl",
+      "exists": true,
+      "records": 500
+    },
+    {
+      "purpose": "第一轮纯文本 baseline（只读）",
+      "path": "baseline_results.jsonl",
+      "exists": true,
+      "records": 500
+    },
+    {
+      "purpose": "第一轮 Qwen3-VL-Plus（只读）",
+      "path": "advanced_rag_results.jsonl",
+      "exists": true,
+      "records": 500
+    },
+    {
+      "purpose": "DeepSeek 500 题问答",
+      "path": "outputs\\final500\\run500\\qa\\ds_results.jsonl",
+      "exists": true,
+      "records": 500
+    },
+    {
+      "purpose": "500 题目录",
+      "path": "outputs\\final500\\toc\\toc.json",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "目录路由预测",
+      "path": "outputs\\final500\\run500\\toc\\routes.jsonl",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "目录检索指标",
+      "path": "outputs\\final500\\run500\\toc\\metrics.json",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "Jev 判断汇总",
+      "path": "outputs\\final500\\run500\\jev",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "Jev 预测(title)",
+      "path": "outputs\\final500\\run500\\jev\\jev_predictions_title_500.jsonl",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "Jev 预测(route)",
+      "path": "outputs\\final500\\run500\\jev\\jev_predictions_route_500.jsonl",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "Jev 预测(ocr)",
+      "path": "outputs\\final500\\run500\\jev\\jev_predictions_ocr_500.jsonl",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "Jev 预测(recover)",
+      "path": "outputs\\final500\\run500\\jev\\jev_predictions_recover_500.jsonl",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "Jev 预测(pilot1)",
+      "path": "outputs\\final500\\run500\\jev\\jev_predictions_ocr_pilot_500.jsonl",
+      "exists": true,
+      "records": null
+    },
+    {
+      "purpose": "Jev 预测(pilot2)",
+      "path": "outputs\\final500\\run500\\jev\\jev_predictions_ocr_pilot2_500.jsonl",
+      "exists": true,
+      "records": null
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+{
+  "generated_at": "2026-11-12 20:16:47",
+  "samples": 500,
+  "route": {
+    "routes_jsonl_records": 500,
+    "routes_jsonl_ok": 374,
+    "routes_fill_records": 126,
+    "routes_fill_ok": 56,
+    "routes_fill_abstain": 70,
+    "route_executed_unique_qid": 500,
+    "route_not_executed": 0
+  },
+  "jev": {
+    "unique_success_qid": 500,
+    "total_success_records": 500,
+    "duplicate_qid": [],
+    "complete_judgement": 500,
+    "incomplete_qid": [],
+    "leak_check_failures": 0,
+    "gold_answer_visible_in_snippet": 61,
+    "input_tokens": 660142,
+    "output_tokens": 47000,
+    "avg_latency_sec": 0.422,
+    "action_raw": {
+      "search": 296,
+      "expand": 169,
+      "answer": 35
+    },
+    "action_normalized": {
+      "expand": 40,
+      "search": 93,
+      "answer": 3,
+      "null": 364
+    }
+  },
+  "per_file": {
+    "jev_predictions_gapfill_500.jsonl": {
+      "records": 61,
+      "success": 61,
+      "fail": 0,
+      "input_tokens": 76170,
+      "output_tokens": 5734
+    },
+    "jev_predictions_ocr_500.jsonl": {
+      "records": 11,
+      "success": 11,
+      "fail": 0,
+      "input_tokens": 14189,
+      "output_tokens": 1034
+    },
+    "jev_predictions_ocr_pilot2_500.jsonl": {
+      "records": 8,
+      "success": 8,
+      "fail": 0,
+      "input_tokens": 9992,
+      "output_tokens": 752
+    },
+    "jev_predictions_ocr_pilot_500.jsonl": {
+      "records": 2,
+      "success": 2,
+      "fail": 0,
+      "input_tokens": 2353,
+      "output_tokens": 188
+    },
+    "jev_predictions_recover_500.jsonl": {
+      "records": 2,
+      "success": 2,
+      "fail": 0,
+      "input_tokens": 2439,
+      "output_tokens": 188
+    },
+    "jev_predictions_round3_500.jsonl": {
+      "records": 65,
+      "success": 65,
+      "fail": 0,
+      "input_tokens": 81528,
+      "output_tokens": 6110
+    },
+    "jev_predictions_route_500.jsonl": {
+      "records": 88,
+      "success": 88,
+      "fail": 0,
+      "input_tokens": 116369,
+      "output_tokens": 8272
+    },
+    "jev_predictions_title_500.jsonl": {
+      "records": 263,
+      "success": 263,
+      "fail": 0,
+      "input_tokens": 357102,
+      "output_tokens": 24722
+    }
+  },
+  "unanswerable": {
+    "unanswerable_total": 119,
+    "unanswerable_action": {
+      "search": 81,
+      "expand": 34,
+      "answer": 4
+    },
+    "unanswerable_sufficient_true": 3,
+    "unanswerable_reasonable_refusal": 116
+  },
+  "answerable": {
+    "answerable_total": 381,
+    "answerable_action": {
+      "search": 215,
+      "expand": 135,
+      "answer": 31
+    },
+    "answerable_sufficient_true": 34
+  },
+  "round3_batches": [
+    {
+      "batch": "批次A(含上次中断残留)",
+      "n": 20,
+      "qids": [
+        "Q0005",
+        "Q0011",
+        "Q0012",
+        "Q0014",
+        "Q0015",
+        "Q0017",
+        "Q0026",
+        "Q0036",
+        "Q0053",
+        "Q0056",
+        "Q0057",
+        "Q0060",
+        "Q0067",
+        "Q0076",
+        "Q0090",
+        "Q0092",
+        "Q0099",
+        "Q0103",
+        "Q0104",
+        "Q0107"
+      ],
+      "success": 20,
+      "input_tokens": 25375,
+      "output_tokens": 1880,
+      "est_cost_cny": 0.06
+    },
+    {
+      "batch": "批次B",
+      "n": 20,
+      "qids": [
+        "Q0114",
+        "Q0125",
+        "Q0134",
+        "Q0144",
+        "Q0147",
+        "Q0153",
+        "Q0167",
+        "Q0213",
+        "Q0215",
+        "Q0224",
+        "Q0231",
+        "Q0243",
+        "Q0249",
+        "Q0258",
+        "Q0259",
+        "Q0261",
+        "Q0262",
+        "Q0274",
+        "Q0311",
+        "Q0313"
+      ],
+      "success": 20,
+      "input_tokens": 25558,
+      "output_tokens": 1880,
+      "est_cost_cny": 0.06
+    },
+    {
+      "batch": "批次C",
+      "n": 20,
+      "qids": [
+        "Q0315",
+        "Q0324",
+        "Q0329",
+        "Q0330",
+        "Q0331",
+        "Q0339",
+        "Q0340",
+        "Q0341",
+        "Q0343",
+        "Q0355",
+        "Q0377",
+        "Q0384",
+        "Q0389",
+        "Q0394",
+        "Q0416",
+        "Q0428",
+        "Q0450",
+        "Q0452",
+        "Q0466",
+        "Q0471"
+      ],
+      "success": 20,
+      "input_tokens": 24517,
+      "output_tokens": 1880,
+      "est_cost_cny": 0.06
+    },
+    {
+      "batch": "批次D",
+      "n": 5,
+      "qids": [
+        "Q0475",
+        "Q0483",
+        "Q0489",
+        "Q0494",
+        "Q0498"
+      ],
+      "success": 5,
+      "input_tokens": 6078,
+      "output_tokens": 470,
+      "est_cost_cny": 0.015
+    }
+  ],
+  "round3_total_cost_cny": 0.195,
+  "missing_qids": [],
+  "cost_total_cny": 1.5,
+  "cost_note": "0.0030 元/次为项目历史账单实测均值，非官方报价；非本次新增成本口径"
+}

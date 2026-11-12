@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-11-12 18:17:34",
+  "A_route": {
+    "targets": 126,
+    "selection_basis": "无成功路由记录（不读取 answer/answerability）",
+    "unanswerable_targets_present_but_not_used_for_selection": 119,
+    "prompt_leaks": [],
+    "prompt_fields": [
+      "question",
+      "sections(section_id/title/level/page range)"
+    ]
+  },
+  "B_jev_snippets": {
+    "total_records": 126,
+    "ok": 61,
+    "status_counts": {
+      "not_applicable": 53,
+      "no_snippet": 12,
+      "ok": 61
+    },
+    "traceability_issues": [],
+    "gold_answer_appears_in_snippet": 0,
+    "note": "gold_answer 出现在片段中属于数据巧合（答案本就写在正文里），不代表泄漏；选页过程未使用 gold。"
+  },
+  "C_jev_state": {
+    "state_issues": [],
+    "checked": 61
+  },
+  "D_dedup": {
+    "snippet_id_duplicates": [],
+    "prediction_qid_duplicates": [],
+    "checked_qids": 61,
+    "checked_qids_basis": "已有预测文件",
+    "prediction_qids_overlapping_existing": [],
+    "gapfill_output_file": "<PROJECT_ROOT>\\outputs\\final500\\run500\\jev\\jev_predictions_gapfill_500.jsonl",
+    "existing_predictions_touched": false
+  },
+  "E_hashes_before": {
+    "outputs\\final500\\run500\\toc\\routes.jsonl": "d3b260123e7eec931fdc1c091f577bf290dfb5fbab0c4f7503a4c2b00d7b8089",
+    "outputs\\final500\\run500\\qa\\ds_results.jsonl": "a089dd2ff7ade3881a8a38e3e5f556b29d3be1d1e7dc32d0ac9afbea5bdbbe9e",
+    "outputs\\final500\\run500\\jev\\jev_predictions_title_500.jsonl": "190800a6b341496790fceabcf7ab4d4057d6c9de2da8708a289fa1a4c33ff48b",
+    "outputs\\final500\\run500\\jev\\jev_predictions_route_500.jsonl": "75d27faaf60412bbafd6574e89b0fa93463398dfae0374577716d67aa41d96ca",
+    "outputs\\final500\\run500\\jev\\jev_predictions_ocr_500.jsonl": "a3581404f8cc9065a7bbf68010528b2eddb6cdeedb5d52f77fabc22ad127baed",
+    "outputs\\final500\\run500\\jev\\jev_predictions_recover_500.jsonl": "5979f6756366da03e96c6ddb41841b110217687af769c7c8f67599dbb33a2543",
+    "outputs\\final500\\run500\\jev\\jev_predictions_ocr_pilot_500.jsonl": "fb7e16cd7e4c10ae87e22f59794afe8bc32de3332ea0a1840627859bea737e44",
+    "outputs\\final500\\run500\\jev\\jev_predictions_ocr_pilot2_500.jsonl": "09aab9cd419c4ba73b66d7592c7ec20ace5ac7482355c537e3398ef19a3b9ab8"
+  },
+  "verdict": "PASS"
+}

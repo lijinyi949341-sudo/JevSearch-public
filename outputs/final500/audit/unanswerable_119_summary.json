@@ -1,0 +1,23 @@
+{
+ "n": 119,
+ "qa_success": 119,
+ "route_skipped": 119,
+ "jev_judged": 56,
+ "jev_no_input": 63,
+ "jev_relevant_true": 20,
+ "jev_sufficient_true": 2,
+ "jev_action_norm": {
+  "expand": 18,
+  "search": 36,
+  "answer": 2
+ },
+ "jev_snippet_prefix": {
+  "title": 56
+ },
+ "sufficient_true_qids": [
+  "Q0363",
+  "Q0385"
+ ],
+ "qa_refusal_correct_strict": 107,
+ "qa_refusal_correct_lenient": 113
+}
