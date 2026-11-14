@@ -1,0 +1,8 @@
+field,correct,total,accuracy,note
+relevant,25,30,0.8333,
+self_contained,19,30,0.6333,
+sufficient,25,30,0.8333,
+next_action_raw,17,30,0.5667,
+next_action_normalized,21,30,0.7000,按 relevant/sufficient 协议归一化后的动作；原值见 next_action_raw
+four_fields_raw,12,30,0.4000,relevant、self_contained、sufficient、next_action（原始）四项同时一致
+four_fields_normalized,14,30,0.4667,relevant、self_contained、sufficient、next_action（归一化）四项同时一致

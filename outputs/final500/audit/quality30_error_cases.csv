@@ -1,0 +1,19 @@
+qid,snippet_id,source,doc_type,mismatched_fields,human_relevant,jev_relevant,human_self_contained,jev_self_contained,human_sufficient,jev_sufficient,human_next_action,jev_next_action_raw,jev_next_action_normalized,human_confidence
+Q0021,Q0021__recover,recover,Research report / Introduction,self_contained;sufficient;next_action,1,1,0,1,0,1,expand,answer,answer,2
+Q0029,Q0029__ocr_pilot,ocr_pilot,Tutorial/Workshop,self_contained;next_action,0,0,1,0,0,0,search,expand,search,3
+Q0045,Q0045__title,title,Academic paper,relevant;next_action,0,1,1,1,0,0,search,expand,expand,3
+Q0143,Q0143__route,route,Financial report,self_contained,1,1,1,0,1,1,answer,answer,answer,3
+Q0165,Q0165__title,title,Guidebook,relevant,0,1,1,1,0,0,search,search,expand,3
+Q0191,Q0191__route,route,Academic paper,relevant;self_contained;next_action,0,1,1,0,0,0,search,expand,expand,2
+Q0216,Q0216__ocr,ocr,Tutorial/Workshop,self_contained;sufficient;next_action,1,1,1,0,0,1,expand,answer,answer,2
+Q0230,Q0230__ocr,ocr,Guidebook,next_action,0,0,1,1,0,0,search,expand,search,3
+Q0232,Q0232__recover,recover,Research report / Introduction,next_action,1,1,1,1,0,0,expand,search,expand,2
+Q0244,Q0244__route,route,Brochure,sufficient;next_action,1,1,1,1,0,1,expand,answer,answer,2
+Q0335,Q0335__ocr,ocr,Research report / Introduction,self_contained;next_action,0,0,1,0,0,0,search,expand,search,3
+Q0348,Q0348__title,title,Administration/Industry file,self_contained;next_action,0,0,1,0,0,0,search,expand,search,3
+Q0363,Q0363__title,title,Brochure,relevant;sufficient;next_action,0,1,1,1,0,1,search,answer,answer,3
+Q0372,Q0372__ocr_pilot,ocr_pilot,Tutorial/Workshop,self_contained,1,1,1,0,0,0,expand,expand,expand,2
+Q0390,Q0390__title,title,Tutorial/Workshop,sufficient;next_action,1,1,1,1,0,1,expand,search,answer,2
+Q0412,Q0412__title,title,Administration/Industry file,relevant;self_contained,1,0,1,0,0,0,expand,expand,search,3
+Q0462,Q0462__title,title,Research report / Introduction,self_contained;next_action,1,1,1,0,1,1,answer,expand,answer,2
+Q0467,Q0467__ocr_pilot,ocr_pilot,Research report / Introduction,self_contained,1,1,1,0,0,0,expand,expand,expand,2
